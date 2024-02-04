@@ -146,6 +146,7 @@ pytz==2022.6
 PyWavelets==1.4.1
 pywin32-ctypes==0.2.0
 pywinpty==2.0.9
+PyQt5
 PyYAML==6.0.1
 pyzmq==24.0.1
 qtconsole==5.4.0
