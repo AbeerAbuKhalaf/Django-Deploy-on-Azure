@@ -48,7 +48,7 @@ fsspec==2023.9.1
 gast==0.5.3
 google-assistant-grpc==0.0.2
 google-assistant-sdk==0.3.3
-google-auth==2.22.0
+google-auth
 google-auth-oauthlib==0.1.0
 googleapis-common-protos==1.60.0
 greenlet==2.0.2
