@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - projectvqa
+name: Build and deploy Python app to Azure Web App - ProjectVQA
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B452926AA2C144E0AAF0CD34CC0627C1 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9846B299282741F39FC76ED92E73DEC2 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_93793FCD63CC4592A487DF49D68741BF }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B4D200F069C4487AB9A17F2C1195E0AF }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_ABAD6EC42BFE4E66A75C7CB6EBB30DFC }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BE18EC2F0F3B4BCEADF0A6F469724513 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'projectvqa'
+          app-name: 'ProjectVQA'
           slot-name: 'Production'
           
