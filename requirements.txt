@@ -42,7 +42,7 @@ executing==1.2.0
 fairseq==0.12.2
 fastjsonschema==2.16.2
 filelock==3.12.4
-Flask==2.3.2
+Flask
 fonttools==4.38.0
 fsspec==2023.9.1
 gast==0.5.3
