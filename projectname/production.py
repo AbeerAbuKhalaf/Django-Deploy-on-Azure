@@ -13,7 +13,7 @@ SECRET_KEY = [os.environ['SECRET']]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 ALLOWED_HOSTS = ['*'] 
-CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME']] 
+CSRF_TRUSTED_ORIGINS = ['*'] 
 
 # Application definition
 
