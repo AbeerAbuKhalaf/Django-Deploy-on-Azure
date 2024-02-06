@@ -1,16 +1,9 @@
-"""
-WSGI config for projectname project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
-"""
-
 import os
 from django.core.wsgi import get_wsgi_application
-settings_module = 'projectname.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'projectname.settings'
 
+# Check for the PRODUCTION environment variable to see if we are running in Azure App Service
+# If so, then load the settings from production.py
+settings_module = 'projectname.production' if 'PRODUCTION' in os.environ else 'projectname.settings'
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
 
 
